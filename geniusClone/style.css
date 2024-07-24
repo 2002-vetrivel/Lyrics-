@@ -1,0 +1,92 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffff64;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#logo {
+    width: 50px;
+}
+
+#headers {
+    width: 150px;
+}
+
+input[type="text"] {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    outline: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    white-space: pre-wrap; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 300px;
+    text-align: left; 
+    padding: 10px; 
+    border-radius: 10px;
+    background-color:#ffff64; 
+    color: #040404;
+    
+}
+#result::-webkit-scrollbar
+{
+    width: 0;
+    background: transparent;
+}
+
+#submit {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #040404;
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dev {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 700;
+    font-style: italic;
+}
